@@ -1,17 +1,52 @@
 *::-webkit-scrollbar{
     display: none;
+    transition: all 1s ease-in-out;
+    opacity: 0.7;
+}
+body{
+    position: relative;
 }
 *{
     padding: 0;
     margin:0;
     box-sizing: border-box;
 }
-.navbar-nav{
-   margin-left: 40%;
-   width: 1000px;
+.name{
+    display: none;
+}
+img{
+    width:220px;
+}
+.top{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    margin-left: 65%;
+    margin-top: -6%;
+}
+.navbar i{
+    margin-left: 30%;
+    cursor: pointer;
+    color: #7adb5d;
+    display: none;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
 }
 .nav-item{
     margin: 1%;
+}
+.nav-link{
+    width: max-content;
+}
+.btn{
+    width: 100px;
 }
 .nav-item a{
     font-size: 18px;
@@ -45,6 +80,9 @@
     color: white;
     text-decoration: underline;
 }
+.div1 a:hover,.div3 a:hover{
+    color: rgb(59, 199, 59);
+}
 .div2{
     margin: 2%;
     text-align: center;
@@ -62,6 +100,7 @@
 }
 .div3 .stories{
     margin-left: 2%;
+    cursor: pointer;
 }
 .stories p{
     font-size: 20px;
@@ -83,7 +122,7 @@
 ul li{
     margin-left: 5%;
 }
-.empty h2{
+.div4 .empty h2{
     color: white;
     padding-top: 40%;
 }
@@ -100,6 +139,7 @@ ul li{
     width: max-content;
     margin-left: 35%;
     margin-top: 10%;
+    margin-bottom: 5%;
     border-bottom: 5px solid rgb(175, 224, 102);
 }
 .div5 ul{
@@ -107,19 +147,13 @@ ul li{
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
 }
-.svgimages{
-    margin-top: 7%;
-}
-.svgimages .empty{
-    width: 100px;
-    height: 100px;
-}
 .pngs{
     width: 180px;
     height: 180px;
     margin-bottom: 12%;
 }
 .div6{
+    margin-left: 5%;
     margin-top: 10%;
 }
 .div6 .large-ul{
@@ -144,6 +178,7 @@ ul li{
     margin-bottom: 2%;
 }
 .div7{
+    margin-left: 7%;
     width: 550px;
     margin-bottom: 5%;
 }
@@ -165,14 +200,14 @@ ul li{
     position: fixed;
     z-index: 99;
     top: 90%;
-    left: 80%;
+    left: 77%;
     display: flex;
     width: max-content;
     text-align: center;
 }
 .fix span{
     margin-right: 1%;
-    background-color: aqua;
+    background-color: #7adb5d;
     border-radius: 35px;
     font-size: 20px;
     width: 70px;
@@ -183,17 +218,215 @@ ul li{
     border-radius: 35px;
 
 }
+.div8 .small-ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+.div8{
+    margin-top: 8%;
+    text-align: center;
+}
+.div8 .large-ul{
+    margin-top: 3%;
+    list-style: none;
+}
+.div8 .small-ul .empty{
+    width: 350px;
+    height: 350px;
+    border: 5px solid rgba(56, 94, 197, 0.1);
+}
+.div8 p{
+    font-size: 25px;
+}
+.spotlight{
+    text-align: center;
+    text-align: center;
+}
+.spotlight .empty{
+    width: 98%;
+    height: 200px;
+    background-color: #000000;
+    margin: 3% 1% 3% 1%;
+    cursor: pointer;
+    position: relative;
+}
+.spotlight .empty :hover{
+    animation: trans 4s linear infinite ;
+    transition: all .2s ease;
+}
+.spotlight .empty h2{
+    color: #ffffff;
+    position: absolute;
+    top: 43%;
+    left: 40%;
+}
+@keyframes trans{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.6);
+    }
+}
+.project{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.project p{
+    margin: 1% 2% 1% 2%;
+}
+.project a{
+    background-color: #6AC17D;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    color: #ffffff;
+}
+.askmorgan{
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.askmorgan p{
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 22%;
+}
+.askmorgan h2{
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+}
+.totop{
+    display: none;
+}
 @media screen and (max-width:720px){
-    .navbar-nav{
-        display: none;
-    }
-    /* .div4{
-    } */
     .div4 ul{
-        display: flex;
-        flex-direction: row;
+        display: block;
     }
-    /* *{
-        display: none;
-    } */
+   .empty{
+       margin-bottom: 8%;
+   }
+   .div5 ul{
+       display: block;
+   }
+   .div5 h2{
+      margin-left:7%;
+   }
+   .div6 .large-ul{
+       display: block;
+   }
+   .div6 .small-ul{
+       margin-bottom: 5%;
+   }
+   .fix{
+       display: none;
+   }
+   .div7{
+       width: 450px;
+   }
+   .email{
+       width: 350px;
+   }
+   .div3 a{
+        margin-left: -20%;
+   }
+   .div2 p{
+       font-size: 20px;
+   }
+   .div1 h1{
+       margin-left: -15%;
+       margin-top: 10%;
+       font-size: 35px;
+   }
+   .div1 h2{
+       margin-top: -20%;
+       margin-left: -25%;
+   }
+   .div1 a{
+       margin-left: -5%;
+   }
+   .navbar{
+       display: none;
+   }
+   .logo{
+       display: none;
+   }
+   .name{
+       position: absolute;
+       display: block;
+       color: #7adb5d;
+       margin-left: 33%;
+       height: 80px;
+       z-index: 5;
+   }
+   .name h1{
+    font-size: 50px;
+   }
+   .navbar ul{
+       display: none;
+   }
+   .navbar i{
+       position: absolute;
+       display: block;
+       top: 35px;
+       left: 150px;
+       color: #7adb5d;
+       z-index: 99;
+   }
+   .navbar .active{
+       display: block;
+       position: absolute;
+       z-index: 98;
+       background-color: rgb(107, 167, 72);
+       top: 80px;
+       width: 290px;
+       height: 300px;
+       text-align: center;
+       border-radius: 10px;
+       transition: all .1s ease-in-out;
+   }
+   .active .nav-link{
+    align-self: center;
+   }
+   .div8 .large-ul{
+    display: block;
+    }
+    .div8 .small-ul{
+        display: block;
+        margin-bottom: 5%;
+    }
+    .spotlight .empty h2{
+        left: 20%;
+    }
+    .project{
+        position: relative;
+        height: 250px;
+    }
+    .project a{
+        position: absolute;
+        top: 75%;
+        left: 40%;
+    }
+    .askmorgan h2{
+        font-size: 60px;
+        margin-left: -14%;
+    }
+    .askmorgan p{
+        font-size: 20px;
+        margin-left: -20%;
+    }
+    .totop{
+        display: block;
+        position: fixed;
+        top: 86%;
+        left: 90%;
+        cursor: pointer;
+    }
 }
