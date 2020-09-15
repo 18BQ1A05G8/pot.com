@@ -9,14 +9,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Pot</title>
 </head>
 <body>
-      <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="#">
-          <img src='https://www.pot.com/wp-content/uploads/2019/12/logo-black.jpg' alt="logo" style="width:220px;">
-        </a>
-        <ul class="navbar-nav">
+    <a class="logo" href="#">
+      <img src='https://www.pot.com/wp-content/uploads/2019/12/logo-black.jpg' alt="logo" style="width:220px;">
+    </a>
+    <div class="name">
+      <h1>Pot.com</h1>
+    </div>
+    <div class="top">
+      <div class="navbar">
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        <ul class="nav" >
           <li class="nav-item">
             <a class="nav-link" href="#">Shop</a>
           </li>
@@ -36,13 +42,15 @@
             <button type="button" class="btn btn-outline-dark">Sign Up</button>
           </li>
         </ul>
-      </nav> 
+      </div>
+    </div>
+         
       <div class="div1">
         <h1>Explore the world of pot.</h1>
         <h2>Shop our collection of devices and hemp CBD</h2>
         <a href="#">shop pot.com</a>
       </div>
-      <div class="div">
+    <div class="div">
           <div class="div2">
             <span>Cannabis is an opportunity for many, not just a few.</span>
             <p>Cannabis has been called many different names: weed, marijuana, hemp, broccoli, ganja and of course pot to name a few. We prefer to use pot for obvious reasons 😉
@@ -57,9 +65,13 @@
 
         <div class="fix">
           <span>Note</span>
-          <div class="f2">Black space left for the images </div>
+          <div class="f2">IT IS TAKEN REFERENCE FROM <a href="http://www.pot.com" target="__blank">WWW.POT.COM</a> </div>
         </div>
-
+        <div class="totop" onclick="topFunction()">
+          <i class="fa fa-angle-double-up fa-2x" aria-hidden="true"></i>
+          <br>
+          Top
+        </div>
 
         <div class="div3">
           <h3>Top Stories</h3>
@@ -81,59 +93,115 @@
             <hr>
           </div>
           <a href="#">Read It All</a>
-      </div>
-      <div class="div4">
-        <h2>Discover</h2>
-        <ul>
-          <li>
-            <div class="empty">
-              <h2>Dispensaries</h2>
-            </div>
-          </li>
-          <li>
-            <div class="empty">
-              <h2>State Laws</h2>
-            </div>
-          </li>
-          <li>
-            <div class="empty">
-              <h2>Med Cards</h2>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="div5">
-        <h2>Cannabis You Can Trust</h2>
-        <div class="svgimages"></div>
-        <ul>
-          <li>
-            <div class="empty">
-              <img class="pngs" src="https://www.pot.com/wp-content/uploads/2020/01/WeedLeaf.png" alt="">
-              <h4>100% Legal Products</h4>
-              <p>
-                  We verify the legality of each product in your state so you can shop stress-free.
-              </p>
-            </div>
-          </li>
-          <li>
-            <div class="empty">
-              <img class="pngs" src="https://www.pot.com/wp-content/uploads/2020/01/Microscope-298x300.png" alt="">   
-              <h4>Third-Party Lab Verified</h4>           
-                <p>Every CBD product is independently tested for potency by a top research University so you get the experience you're expecting every time.
+        </div>
+        <div class="div4">
+          <h2>Discover</h2>
+          <ul>
+            <li>
+              <div class="empty">
+                <h2>Dispensaries</h2>
+              </div>
+            </li>
+            <li>
+              <div class="empty">
+                <h2>State Laws</h2>
+              </div>
+            </li>
+            <li>
+              <div class="empty">
+                <h2>Med Cards</h2>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="div5">
+          <h2>Cannabis You Can Trust</h2>
+          <!-- <div class="svgimages"></div> -->
+          <ul>
+            <li>
+              <div class="empty">
+                <img class="pngs" src="https://www.pot.com/wp-content/uploads/2020/01/WeedLeaf.png" alt="">
+                <h4>100% Legal Products</h4>
+                <p>
+                    We verify the legality of each product in your state so you can shop stress-free.
                 </p>
-            </div>
-          </li>
-          <li>
-            <div class="empty">
-              <img class="pngs" src="https://www.pot.com/wp-content/uploads/2020/01/Heart-300x261.png" alt="">
-              <h4>Pot.com Team Favorite</h4>
-              <p>Everything we sell is personally loved by one of our cannabis experts.
-              </p>
-              <p></p>
-            </div>
-          </li>
-        </ul>
+              </div>
+            </li>
+            <li>
+              <div class="empty">
+                <img class="pngs" src="https://www.pot.com/wp-content/uploads/2020/01/Microscope-298x300.png" alt="">   
+                <h4>Third-Party Lab Verified</h4>           
+                  <p>Every CBD product is independently tested for potency by a top research University so you get the experience you're expecting every time.
+                  </p>
+              </div>
+            </li>
+            <li>
+              <div class="empty">
+                <img class="pngs" src="https://www.pot.com/wp-content/uploads/2020/01/Heart-300x261.png" alt="">
+                <h4>Pot.com Team Favorite</h4>
+                <p>Everything we sell is personally loved by one of our cannabis experts.
+                </p>
+                <p></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="div8">
+          <h2>Shop by Category</h2>
+          <ul class="large-ul">
+            <li>
+              <ul class="small-ul">
+                <li>
+                  <div class="empty"></div>
+                  <p>Tinctures</p>
+                </li>
+                <li>
+                  <div class="empty"></div>
+                  <p>Wellness</p>
+                </li>
+                <li>
+                  <div class="empty"></div>
+                  <p>Pets</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul class="small-ul">
+                <li>
+                  <div class="empty"></div>
+                  <p>Dry-Herb</p>
+                </li>
+                <li>
+                  <div class="empty"></div>
+                  <p>Concentrates</p>
+                </li>
+                <li>
+                  <div class="empty"></div>
+                  <p>Cartridges</p>
+                </li>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="spotlight">
+      <h2>Cannabis Community Spotlight</h2>
+      <div class="empty">
+        <h2>CHANGE IS COMING</h2>
       </div>
+    </div>
+    <div class="project">
+      <h4>Last Prisoner Project</h4>
+      <p>With all that's going on the world, people are looking for different ways to show their support and take action. We've been working with the Last Prisoner Project for the past year and truly believe their organization. Heck even Elon Musk believes we should do something about it and that guy is pretty dang smart.</p>
+      <a href="#">Get involved</a>
+    </div>
+    <div class="askmorgan">
+      <h2>Ask Morgan</h2>
+      <p>Our resident advice columnist, Morgan, is here to answer your burning questions about all things pot.</p>
+    </div>
+
+    <div>
       <div class="div6">
         <img src='https://www.pot.com/wp-content/uploads/2019/12/logo-black.jpg' alt="logo" style="width:200px;">
         <ul class="large-ul">
@@ -191,10 +259,40 @@
         <form>
           <input class="email" type="email" placeholder="Enter Your Email Address"> <input class='button' type="submit" value="Sign UP">
         </form>
-          <!-- <input class=" form-control-lg form-control-borderless" placeholder="Enter Your Email Address"><button class="btn btn-lg btn-success" type="submit">Sign Up</button> -->
       </div>
 
   </div>
-      
+  <script>
+    var menu = document.querySelector('.fa');
+    var flag=true;
+    menu.addEventListener('click',function(){
+      if(flag==true){
+        // menu.classList.replace('bars','times')
+        menu.classList.add('fa-times');
+        menu.classList.remove('fa-bars');
+        flag=false;
+        document.querySelector('.nav').classList.add('active');
+      }
+      else{
+        // menu.classList.replace('times','bars')
+        menu.classList.add('fa-bars');
+        menu.classList.remove('fa-times');
+        flag=true;
+        document.querySelector('.nav').classList.remove('active');
+      }
+    })
+
+   var top = document.querySelector(".totop");
+
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+  </script>
 </body>
 </html>
