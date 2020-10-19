@@ -251,22 +251,23 @@ ul li{
     cursor: pointer;
     position: relative;
 }
-.spotlight .empty :hover{
-    animation: trans 4s linear infinite ;
-    transition: all .2s ease;
-}
 .spotlight .empty h2{
     color: #ffffff;
     position: absolute;
     top: 43%;
     left: 40%;
+    animation: trans 4s linear infinite ;
+    transition: all .2s ease;
 }
 @keyframes trans{
-    from{
+    0%{
         transform: scale(1);
     }
-    to{
+    50%{
         transform: scale(1.6);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 .project{
@@ -307,17 +308,63 @@ ul li{
     display: none;
 }
 @media screen and (max-width:720px){
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .div1{
+        margin-top: -10%;
+    }
+    .div1 h1{
+        margin-left: -20%;
+        margin-top: 20%;
+        font-size: 35px;
+        font-size: 25px;
+    }
+    .div1 h2{
+        font-size: 20px;
+        margin-top: -20%;
+        margin-left: -38%;
+        padding-left: 2%;
+    }
+    .div1 a{
+        margin-left: -10%;
+        font-size: 18px;
+    }
     .div4 ul{
         display: block;
     }
-   .empty{
-       margin-bottom: 8%;
+    .div2 p{
+        font-size: 16px;
+    }
+    .div2 span{
+        font-size: 18px;
+    }
+    .div3 a{
+        margin-left: -20%;
+        font-size: 15px;
    }
+   .div3 h3{
+        font-size: 20px;
+   }
+   .div3 p{
+       font-size: 15px;
+   }
+   .div4 h2{
+       font-size: 20px;
+   }
+   .div4 .empty{
+       margin-bottom: 8%;
+       width: 250px;
+       height: 250px;
+   }
+
    .div5 ul{
        display: block;
    }
    .div5 h2{
-      margin-left:7%;
+      margin-left:6%;
+      font-size: 24px;
    }
    .div6 .large-ul{
        display: block;
@@ -334,24 +381,83 @@ ul li{
    .email{
        width: 350px;
    }
-   .div3 a{
-        margin-left: -20%;
+   .pngs{
+       width: 160px;
+       height: 160px;
    }
-   .div2 p{
-       font-size: 20px;
+   .div5 .empty h4{
+       font-size: 18px;
    }
-   .div1 h1{
-       margin-left: -15%;
-       margin-top: 10%;
-       font-size: 35px;
-   }
-   .div1 h2{
-       margin-top: -20%;
-       margin-left: -25%;
-   }
-   .div1 a{
+   .div5,.div8{
        margin-left: -5%;
    }
+   .div8 h2{
+       font-size: 24px;
+       margin-left: -25%;
+       margin-bottom: 10%;
+   }
+   .div8 .large-ul{
+    display: block;
+    }
+    .div8 .small-ul{
+        display: block;
+        margin-bottom: 5%;
+    }
+   .large-ul .small-ul li .empty{
+       width: 250px;
+       height: 250px;
+   }
+    .spotlight h2{
+        left: 20%;
+        font-size: 24px;
+    }
+    .spotlight .empty h2{
+        font-size: 15px;
+        margin-left: -10%;
+    }
+    .project{
+        position: relative;
+        height: 250px;
+    }
+    .project a{
+        position: absolute;
+        top: 85%;
+        left: 35%;
+    }
+    .askmorgan{
+        margin-top: 10%;
+    }
+    .askmorgan h2{
+        font-size: 40px;
+        margin-left: -14%;
+    }
+    .askmorgan p{
+        font-size: 18px;
+        margin-left: -20%;
+    }
+    .totop{
+        display: block;
+        position: fixed;
+        top: 86%;
+        left: 90%;
+        cursor: pointer;
+        color: #7adb5d;
+    }
+    .div6 .large-ul .small-ul li h4{
+        font-size: 20px;
+    }
+    .div6 .large-ul .small-ul li a{
+        font-size: 18px;
+    }
+
+    .div7{
+        width: 360px;
+    }
+    .email{
+        width: 240px;
+    }
+
+
    .navbar{
        display: none;
    }
@@ -362,7 +468,7 @@ ul li{
        position: absolute;
        display: block;
        color: #7adb5d;
-       margin-left: 33%;
+       left: 10%;
        height: 80px;
        z-index: 5;
    }
@@ -375,8 +481,8 @@ ul li{
    .navbar i{
        position: absolute;
        display: block;
-       top: 35px;
-       left: 150px;
+       top: 32px;
+       left: 45%;
        color: #7adb5d;
        z-index: 99;
    }
@@ -386,7 +492,7 @@ ul li{
        z-index: 98;
        background-color: rgb(107, 167, 72);
        top: 80px;
-       width: 290px;
+       width: 200px;
        height: 300px;
        text-align: center;
        border-radius: 10px;
@@ -395,38 +501,6 @@ ul li{
    .active .nav-link{
     align-self: center;
    }
-   .div8 .large-ul{
-    display: block;
-    }
-    .div8 .small-ul{
-        display: block;
-        margin-bottom: 5%;
-    }
-    .spotlight .empty h2{
-        left: 20%;
-    }
-    .project{
-        position: relative;
-        height: 250px;
-    }
-    .project a{
-        position: absolute;
-        top: 75%;
-        left: 40%;
-    }
-    .askmorgan h2{
-        font-size: 60px;
-        margin-left: -14%;
-    }
-    .askmorgan p{
-        font-size: 20px;
-        margin-left: -20%;
-    }
-    .totop{
-        display: block;
-        position: fixed;
-        top: 86%;
-        left: 90%;
-        cursor: pointer;
-    }
+  
+    
 }
